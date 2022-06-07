@@ -11,6 +11,8 @@ public class Drone {
     @Column(name = "id", nullable = false)
     private String id;
 
+    private String serialNumber;
+
     private int weight;
 
     private double batteryCapacity;
@@ -18,10 +20,19 @@ public class Drone {
     public Drone() {
     }
 
-    public Drone(String id, int weight, double batteryCapacity) {
+    public Drone(String id, int weight, double batteryCapacity, String serialNumber) {
         this.id = id;
         this.weight = weight;
         this.batteryCapacity = batteryCapacity;
+        this.serialNumber = serialNumber;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
     }
 
     public int getWeight() {

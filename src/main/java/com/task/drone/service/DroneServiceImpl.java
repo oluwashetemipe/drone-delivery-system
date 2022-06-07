@@ -1,4 +1,4 @@
 package com.task.drone.service;
 
-public class DroneServiceImpl {
+public class DroneServiceImpl implements DroneService {
 }
